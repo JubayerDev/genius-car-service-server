@@ -103,6 +103,10 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send('Genius Server is Running');
+});
+
+app.get('/hero', (req, res) => {
+    res.send('Programming Hero is Love!')
 })
 
 app.listen(port, (req, res) => {
